@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportsDB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-center  fw-bold bg-info">Search your favorite Player</h1>
+
+    <!-- Search Area -->
+
+    <div class="input-group mb-3 w-50 mx-auto border border-5 my-5">
+        <input id="search-field" type="text" class="form-control" placeholder="Search Player" aria-label="Search Player"
+            aria-describedby="button-addon2">
+        <button onclick="searchPlayer()" class="btn btn-outline-secondary" type="button"
+            id="button-addon2">Search</button>
+    </div>
+
+
+    <!-- Clicked Player Detail With link -->
+    <div id="player-detail" class="w-25 mx-auto">
+
+    </div>
+
+
+    <!-- Search Result -->
+
+    <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
+
+
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="js/sportsdb.js"></script>
+</body>
+
+</html>
