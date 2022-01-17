@@ -9,6 +9,9 @@ const searchPlayer = () => {
     }
     else {
         loadPlayerByName(searchText)
+        const spinner = document.querySelector(".loading");
+        console.log(spinner)
+        spinner.classList.remove('loading', 'loading--full-height');
     }
 
 }
@@ -27,6 +30,7 @@ const displayPlayer = info => {
     console.log(info)
 
     const playerContainer = document.getElementById('search-result')
+    playerContainer.textContent = '';
 
     const div = document.createElement('div');
     div.innerHTML = `
