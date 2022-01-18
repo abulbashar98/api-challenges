@@ -44,7 +44,8 @@ const displayWeatherDetail = weatherDetail => {
     <img src="https://openweathermap.org/img/wn/${weatherDetail.weather[0].icon}@2x.png" alt="">
     <h1>${weatherDetail.name}</h1>
     <h3><span>${weatherDetail.main.temp - 273}</span>&deg;C</h3>
-    <h1 class="lead">${weatherDetail.weather[0].description}</h1>
+    <h1 class="lead fw-bold">${weatherDetail.weather[0].description}</h1>
+    <h4>Wind Speed:- ${weatherDetail.wind.speed} km/h</h4>
    `
     weatherDetailContainer.appendChild(div);
 
