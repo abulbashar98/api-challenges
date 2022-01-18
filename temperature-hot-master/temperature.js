@@ -45,7 +45,7 @@ const displayWeatherDetail = weatherDetail => {
     <h1>${weatherDetail.name}</h1>
     <h3><span>${weatherDetail.main.temp - 273}</span>&deg;C</h3>
     <h1 class="lead fw-bold">${weatherDetail.weather[0].description}</h1>
-    <h4>Wind Speed:- ${weatherDetail.wind.speed} km/h</h4>
+    <h4>Wind Speed: ${weatherDetail.wind.speed} km/h</h4>
    `
     weatherDetailContainer.appendChild(div);
 
