@@ -10,6 +10,10 @@ const searchWeather = () => {
     }
     else {
         loadWeatherMap(searchText);
+
+        const spinner = document.querySelector(".loading");
+        console.log(spinner)
+        spinner.classList.remove('loading', 'loading--full-height');
     }
 }
 
@@ -19,7 +23,7 @@ const loadWeatherMap = async city => {
     console.log(city)
 
 
-    // Note:- Can't use a trigger option in WeatherMap.   In that Case It gives a Syntax Error.....(<)
+    // Note:- Can't use a trigger email with condition option in WeatherMap.   In that Case It gives a Syntax Error.....(<)
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=5c4f8b34c34e06511a1b06b0f3a8af4c`
 
