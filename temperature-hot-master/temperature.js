@@ -49,4 +49,4 @@ const displayWeatherDetail = weatherDetail => {
    `
     weatherDetailContainer.appendChild(div);
 
-}
+}              

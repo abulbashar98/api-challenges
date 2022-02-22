@@ -39,7 +39,7 @@ const displayPlayer = info => {
   <div class="card-body">
     <h3 class="text-light bg-dark">${info.strPlayer}</h3>
     <p class="card-text">${info.strDescriptionEN.slice(0, 700)}............../p>
-    <a href="${info.strInstagram}" class="btn btn-primary">Instagram</a>
+    <a target= "_blank" href="${info.strInstagram}" class="btn btn-primary">Instagram</a>
   </div>
 </div>
     `

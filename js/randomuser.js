@@ -31,7 +31,7 @@ const displayRandomUsers = users => {
     });
 }
 
-const loadRandomuserById = async userId => {
+const loadRandomUserById = async userId => {
 
     const url = `https://randomuser.me/api/?results=50/${userId}`
     const response = await fetch(url)
