@@ -1,4 +1,10 @@
-
+document.getElementById('search-input').addEventListener('keypress', function (event) {
+    // console.log(event.target)
+    if (event.key === 'Enter') {
+        const searchBtn = document.getElementById('search-btn');
+        searchBtn.click();
+    }
+})
 
 const searchWeather = () => {
     const searchInputField = document.getElementById('search-input')
